@@ -1,0 +1,15 @@
+Function Main() returns nothing
+   // This function will take 7 integers from user input
+   // each integer will represent a day's high temperature in degrees fahrenheit
+   // the week will start at Sunday (index 0) and end on Saturday (index 6)
+   // the function should store the temperatures in an array
+   // the function should call additional functions to get the min and max temperature
+   // the function should tell the user which day will have the hottest temperature and what it is
+   // the function should tell the user which day will have the coldest temperature and what it is
+
+Function HottestTemp(integer array(?)) returns integer maxIndex
+   // This function should take an array of integers and return the index of the highest
+
+
+Function ColdestTemp(integer array(?)) returns integer minIndex
+// This function should take an array of integers and return the index of the lowest
