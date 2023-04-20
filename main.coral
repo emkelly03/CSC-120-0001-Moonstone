@@ -12,4 +12,4 @@ Function HottestTemp(integer array(?)) returns integer maxIndex
 
 
 Function ColdestTemp(integer array(?)) returns integer minIndex
-// This function should take an array of integers and return the index of the lowest
+   // This function should take an array of integers and return the index of the lowest
