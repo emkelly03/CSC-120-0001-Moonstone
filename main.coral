@@ -7,7 +7,7 @@ Function Main() returns nothing
    // the function should tell the user which day will have the hottest temperature and what it is
    // the function should tell the user which day will have the coldest temperature and what it is
 
-Function HottestTemp(integer array(?)) returns integer maxIndex
+Function HottestTemp(integer array(7) temps) returns integer maxIndex
    // This function should take an array of integers and return the index of the highest
 
 
