@@ -11,5 +11,11 @@ Function HottestTemp(integer array(?)) returns integer maxIndex
    // This function should take an array of integers and return the index of the highest
 
 
-Function ColdestTemp(integer array(?)) returns integer minIndex
+Function ColdestTemp(integer array(7) temps) returns integer minIndex
    // This function should take an array of integers and return the index of the lowest
+   integer i
+   minIndex = 0
+   // for each temperature in the array, compare its value versus the value at the index stored in minIndex
+   for i = 0; i < temps.size; i = i + 1
+      if temps[i] < temps[minIndex]
+         minIndex = i
