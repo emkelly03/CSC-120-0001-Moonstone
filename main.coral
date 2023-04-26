@@ -7,70 +7,20 @@ Function Main() returns nothing
    // the function should tell the user which day will have the hottest temperature and what it is
    // the function should tell the user which day will have the coldest temperature and what it is
 
-   integer array(7) temperatures
-   integer i
-   integer coldestIndex
-   integer hottestIndex
-
-   // fill temperatures array with values from user input
-
-   coldestIndex = ColdestTemp(temperatures)
-   hottestIndex = HottestTemp(temperatures)
-
-   // output information for the coldest temperature
-   Put "The coldest day is " to output
-
-   if coldestIndex == 0
-      Put "Sunday" to output
-   elseif coldestIndex == 1
-      Put "Monday" to output
-   elseif coldestIndex == 2
-      Put "Tuesday" to output
-   elseif coldestIndex == 3
-      Put "Wednesday" to output
-   elseif coldestIndex == 4
-      Put "Thursday" to output
-   elseif coldestIndex == 5
-      Put "Friday" to output
-   elseif coldestIndex == 6
-      Put "Saturday" to output
-   
-   Put " at " to output
-   Put temperatures[coldestIndex] to output
-   Put "°" to output
-   Put "\n" to output
-
-   // output information for the hottest temperature
-   Put "The hottest day is " to output
-
-   if hottestIndex == 0
-      Put "Sunday" to output
-   elseif hottestIndex == 1
-      Put "Monday" to output
-   elseif hottestIndex == 2
-      Put "Tuesday" to output
-   elseif hottestIndex == 3
-      Put "Wednesday" to output
-   elseif hottestIndex == 4
-      Put "Thursday" to output
-   elseif hottestIndex == 5
-      Put "Friday" to output
-   elseif hottestIndex == 6
-      Put "Saturday" to output
-   
-   Put " at " to output
-   Put temperatures[hottestIndex] to output
-   Put "°" to output
-
 Function HottestTemp(integer array(7) temps) returns integer maxIndex
-   // This function should take an array of integers and return the index of the highest
-
+   // This function should take an array of integers and return the index of the highest value
+   integer i
+   maxIndex = 0
+   // for each temperature in the array, compare its value to the value at the index stored in maxIndex
+   for i = 0; i < temps.size; i = i + 1
+      if temps[i] > temps[maxIndex]
+         maxIndex = i
 
 Function ColdestTemp(integer array(7) temps) returns integer minIndex
-   // This function should take an array of integers and return the index of the lowest
+   // This function should take an array of integers and return the index of the lowest value
    integer i
    minIndex = 0
-   // for each temperature in the array, compare its value versus the value at the index stored in minIndex
+   // for each temperature in the array, compare its value to the value at the index stored in minIndex
    for i = 0; i < temps.size; i = i + 1
       if temps[i] < temps[minIndex]
          minIndex = i
